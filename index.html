@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <title>Online Mobile Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</html>
+<body>
+    <nav id="nav">
+    <div class="navTop">
+        <div class="navItem">
+            <img class="mlogo" src="lobo.png" alt="lobo" width="45" height="45" style="border-radius:100% ;">
+        </div>
+        <div class="navItem">
+            <div class="search">
+                <input type="text" placeholder="Search..." class="inputSearch">
+                <img src="search.png" alt="No Image" width="20" height="20" class="searchIcon">
+            </div>
+        </div>
+        <div class="navItem">
+            <span class="offer">Limited Offers!!!</span>
+        </div>
+        <div class="navItem">
+            <img src="cart.png" width="40px" class="cartImage"><span id="navSpan">0</span>
+        </div>
+    </div>
+    <div class="navBottom">
+        <h3 class="menuItem">APPLE</h3>
+        <h3 class="menuItem">SAMSUNG</h3>
+        <h3 class="menuItem">OPPO</h3>
+        <h3 class="menuItem">REDMI</h3>
+        <h3 class="menuItem">VIVO</h3>
+    </div>
+</nav>
+<div class="slider">
+    <div class="sliderWrapper">
+        <div class="sliderItem">
+            <img src="iphone13.jpg" class="slideImg">
+            <h1 class="sliderTitle">APPLE <br>iPhone <br>13 Max Pro</h1>
+            <h2 class="sliderPrice">Rs 80000/-</h2>
+            <a href="#product">
+                <button class="buybtn">BUY NOW</button>
+            </a>
+        </div>
+        <div class="sliderItem">
+            <img src="samsung.jpg" class="slideImg">
+            <h1 class="sliderTitle">SAMSUNG <br>S20 <br>ULTRA</h1>
+            <h2 class="sliderPrice">Rs 30000/-</h2>
+            <a href="#product">
+                <button class="buybtn">BUY NOW</button>
+            </a>
+        </div>
+        <div class="sliderItem">
+            <img src="oppo.jpg" class="slideImg">
+            <h1 class="sliderTitle">OPPO F7<br>SELFIE <br> EXPERT</h1>
+            <h2 class="sliderPrice">Rs 18000/-</h2>
+            <a href="#product">
+                <button class="buybtn">BUY NOW</button>
+            </a>
+        </div>
+        
+        <div class="sliderItem">
+            <img src="redmi.jpg" class="slideImg">
+            <h1 class="sliderTitle">REDMI 10</h1>
+            <h2 class="sliderPrice">Rs 13000/-</h2>
+            <a href="#product">
+                <button class="buybtn">BUY NOW</button>
+            </a>
+        </div>
+        <div class="sliderItem">
+            <img src="vivo.jpg" class="slideImg">
+            <h1 class="sliderTitle">VIVO V17</h1>
+            <h2 class="sliderPrice">Rs 16000/-</h2>
+            <a href="#product">
+                <button class="buybtn">BUY NOW</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="cartContainer">
+        <h1 style="text-align:center ;">Your Cart</h1>
+        <div class="cartInData">
+        <div class="cart">
+            <h5 class="cartTitle">Product</h5>
+            <h5 class="cartPrice">Price</h5>
+            <h5 class="cartQuantity">Quantity</h5>
+            <h5 class="cartTotal">Total</h5>
+        </div>
+        <div class="cartProducts">
+            <div class="cartproduct">
+                <button onclick="decreaseNum()"><i class="fa fa-remove"></i></button>
+                <img src="iphone13.jpg" alt="" class="cartImg">
+                <span class="cartSTitle">PRO MODEL</span>
+            </div>
+            <p>$<span class="cprice">150.00</span></p>
+            <div class="cQuantity">
+                <button onclick="decreaseNum()"><i class="fa fa-minus"></i></button>
+                <input type="text" id="cartInput" class="cartInput" value="1" >
+                <button onclick="increaseNum()"><i class="fa fa-plus"></i></button>
+            </div>
+            <div>
+                $<span class="ctotal">0.00</span>
+            </div>
+        </div>
+        <div class="bascketTotalC">
+            <h4 class="bascketTotalT">Basket Total</h4>
+            <h4>$<span class="bascketTotal">0.00</span></h4>
+        </div>
+    </div>
+        <span class="cartClose">X</span>
+    </div>
+
+</div>
+
+    <div class="feature">
+        <div class="features">
+            <img src="shipping.png" alt="no Img" class="featureImg">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesk">Free home delivery across the India</span>
+        </div>
+        <div class="features">
+            <img src="return.png" alt="no Img" class="featureImg">
+            <span class="featureTitle">15 DAYS RETURN POLICY* </span>
+            <span class="featureDesk">Easy refund in 15 days</span>
+        </div>
+        <div class="features">
+            <img src="gift.jpg" alt="no Img" class="featureImg" style="background-color:aquamarine ;">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesk">Buy gift cards and use coupon code easily</span>
+        </div>
+        <div class="features">
+            <img src="telegram.png" alt="no Img" class="featureImg">
+            <span class="featureTitle">CONTACT US</span>
+            <span class="featureDesk">Contact us via email helpline number</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="iphone2.jpg" alt="" class="productImg">
+        <div class="productDetail">
+            <h1 class="productTitle">APPLE iPhone 13 max pro</h1>
+            <h2><span class="productPrice">Rs 80000/-</span></h2>
+            <p class="productDisc">The Phone display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.5 inches.</p>
+        <div class="colors">
+            <img src="iphone13.jpg" alt="" class="color">
+            <img src="iphone132.jpg" alt="" class="color">
+        </div>
+        <div class="sizes">
+            <div class="size">Gold</div>
+            <div class="size">Black</div>
+            <div class="size">Grey</div>
+        </div>
+        <button class="cartBtn">Add to Cart</button>
+        <button class="productBtn">BUY NOW</button>
+    </div>
+    <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="Enter your name" class="payInput">
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your number" class="payInput">
+        <label>Address</label>
+        <input type="text" placeholder="Enter your address" class="payInput">
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+            <img src="visa.jpg" width="40" alt="no Img" class="cardIcon">
+            <img src="master.png" width="40" alt="no Img" class="cardIcon">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <div class="cardInfo">
+            <input type="text" class="payInput sm" placeholder="mm">
+            <input type="text" class="payInput sm" placeholder="yyyy">
+            <input type="text" class="payInput sm" placeholder="cvv">
+        </div>
+        <button class="payBtn">Checkout!</button>
+        <span class="close">X</span>
+    </div>
+</div>
+<footer>
+    <div class="footerLeft">
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">About Us</h1>
+            <ul class="fMenuList">
+                <li class="fListItem">Company</li>
+                <li class="fListItem">Contact</li>
+                <li class="fListItem">Careers</li>
+                <li class="fListItem">Affiliates</li>
+                <li class="fListItem">Stores</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Useful Links</h1>
+            <ul class="fMenuList">
+                <li class="fListItem">Support</li>
+                <li class="fListItem">Refund</li>
+                <li class="fListItem">FAQ</li>
+                <li class="fListItem">Feedback</li>
+                <li class="fListItem">Stories</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Products</h1>
+            <ul class="fMenuList">
+                <li class="fListItem">iPad Air 2</li>
+                <li class="fListItem">SAMSUNG S21 Ultra</li>
+                <li class="fListItem">Xiomi X20</li>
+                <li class="fListItem">Vivo V21 Pro</li>
+                <li class="fListItem">OPPO RENO</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerRight">
+        <div class="fRightMenu">
+            <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+            <div class="fMail">
+                <input type="text" placeholder="your@gmail.com" class="fInput">
+                <button class="fButton">Join!</button>
+            </div>
+        </div>
+        <div class="fRightMenu">
+            <h1 class="fMenuTitle">Follow Us</h1>
+            <div class="icon">
+                <i class="fa fa-facebook" class="fIcon"></i>
+                <i class="fa fa-whatsapp" class="fIcon"></i>
+                <i class="fa fa-twitter" class="fIcon"></i>
+                <i class="fa fa-instagram" class="fIcon"></i>
+                <i class="fa fa-youtube" class="fIcon"></i>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</footer>
+<section class="sectionname"><p>Made by Vishal Sahu </p></section>
+<script src="index.js"></script>
+</body>
